@@ -1,0 +1,25 @@
+CREATE TABLE `sap_survey_response_sql_survey_valuation_data`
+(
+    `ObjectID`                                     varchar(70) DEFAULT NULL,                                              
+    `ParentObjectID`                               varchar(70) DEFAULT NULL,                                              
+    `ID`                                           varchar(35) NOT NULL,                                              
+    `Version`                                      varchar(32) DEFAULT NULL,                                              
+    `BusinessTransactionDocumentID`                varchar(35) DEFAULT NULL,                                              
+    `BusinessTransactionDocumentUUID`              varchar(32) DEFAULT NULL,                                              
+    `BusinessTransactionDocumentTypeCode`          varchar(15) DEFAULT NULL,                                              
+    `BusinessTransactionDocumentTypeCodeText`      tinyint(1)  DEFAULT NULL,                                              
+    `ProcessorID`                                  varchar(10) DEFAULT NULL,                                              
+    `ProcessorUUID`                                varchar(32) DEFAULT NULL,                                              
+    `RepresentationBinaryObject`                   tinyint(1)  DEFAULT NULL,                                              
+    `RepresentationBinaryObjectResponseIndicator`  tinyint(1)  DEFAULT NULL,                                              
+    `DesignTimeVersionUUID`                        tinyint(1)  DEFAULT NULL,                                              
+    `LifeCycleStatusCode`                          varchar(2)  DEFAULT NULL,                                              
+    `LifeCycleStatusCodeText`                      tinyint(1)  DEFAULT NULL,                                              
+    `EntityLastChangedOn`                          tinyint(1)  DEFAULT NULL,                                              
+    `ValuationCollectionLastChangedBy`             varchar(40) DEFAULT NULL,                                              
+    `ETag`                                         tinyint(1)  DEFAULT NULL,                                              
+    `SignatureUUID`                                tinyint(1)  DEFAULT NULL,                                              
+    `TransactionDocumentUUID`                      tinyint(1)  DEFAULT NULL,                                              
+    PRIMARY KEY (`ID`),
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8;
