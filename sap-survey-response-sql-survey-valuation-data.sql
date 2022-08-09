@@ -1,8 +1,8 @@
 CREATE TABLE `sap_survey_response_sql_survey_valuation_data`
 (
+    `ID`                                           varchar(35) NOT NULL, 
     `ObjectID`                                     varchar(70) DEFAULT NULL,                                              
-    `ParentObjectID`                               varchar(70) DEFAULT NULL,                                              
-    `ID`                                           varchar(35) NOT NULL,                                              
+    `ParentObjectID`                               varchar(70) DEFAULT NULL,                                                                                           
     `Version`                                      varchar(32) DEFAULT NULL,                                              
     `BusinessTransactionDocumentID`                varchar(35) DEFAULT NULL,                                              
     `BusinessTransactionDocumentUUID`              varchar(32) DEFAULT NULL,                                              

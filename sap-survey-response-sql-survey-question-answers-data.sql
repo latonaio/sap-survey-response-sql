@@ -1,8 +1,8 @@
 CREATE TABLE `sap_survey_response_sql_survey_question_answers_data`
 (
-      `ObjectID`                    varchar(70) DEFAULT NULL,                       
-      `ParentObjectID`              varchar(70) DEFAULT NULL,                       
-      `QuestionUUID`                varchar(32) NOT NULL,                       
+      `ObjectID`                    varchar(70) NOT NULL,  
+      `QuestionUUID`                varchar(32) DEFAULT NULL,                   
+      `ParentObjectID`              varchar(70) DEFAULT NULL,                                            
       `QuestionAnswerOptionUUID`    varchar(32) DEFAULT NULL,                       
       `QuestionRatingUUID`          varchar(32) DEFAULT NULL,                       
       `QuestionResponseOptionUUID`  varchar(32) DEFAULT NULL,                       
@@ -21,6 +21,6 @@ CREATE TABLE `sap_survey_response_sql_survey_question_answers_data`
       `AttributeID`                 varchar(40) DEFAULT NULL,                       
       `Text`                        tinyint(1)  DEFAULT NULL,                       
       `ETag`                        tinyint(1)  DEFAULT NULL,                       
-    PRIMARY KEY (`QuestionUUID`),
+    PRIMARY KEY (`ObjectID`),
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8;
